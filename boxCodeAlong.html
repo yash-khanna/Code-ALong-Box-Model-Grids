@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+        }
+
+        #box1 {
+            background-color: red;
+            padding: 10px;
+            border: 10px solid black;
+            margin: 40px;
+            height: 400px;
+            width: 400px;
+            box-sizing: border-box;
+        }
+
+        #box2 {
+            background-color: blue;
+            padding: 10px;
+            border: 5px solid yellow;
+            margin: 20px;
+            height: 400px;
+            width: 400px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 20px;
+
+        }
+
+        .item1 {
+            background: orangered;
+        }
+
+        .item2 {
+            background: green;
+
+        }
+
+        .item3 {
+            background: blue;
+        }
+
+        .item4 {
+            background: brown;
+        }
+
+        .item5 {
+            background: coral;
+        }
+
+        div:first-child {
+            grid-column-end: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box1">Prograd</div>
+    <div id="box2">Faceprep</div>
+
+    <div class="grid">
+        <div class="item1">FOCUS</div>
+        <div class="item2">ACADEMY</div>
+        <div class="item3">FOR</div>
+        <div class="item4">CAREER</div>
+        <div class="item5">ENHANCEMENT</div>
+    </div>
+</body>
+
+</html>
